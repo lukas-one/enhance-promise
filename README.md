@@ -1,4 +1,4 @@
-# Simele enhancements for Promises #
+# Simple enhancements for Promises #
 
 
 Main features:
