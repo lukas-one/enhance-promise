@@ -1,0 +1,28 @@
+{
+  "name": "enhance-promise",
+  "version": "1.0.0",
+  "description": "Simple enhancements for Promises in TS/JS projects",
+  "main": "src/enhance-promise.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukas-one/enhance-promise.git"
+  },
+  "author": "Luke Trimby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukas-one/enhance-promise/issues"
+  },
+  "homepage": "https://github.com/lukas-one/enhance-promise#readme",
+  "files": [
+    "src/enhance-promise.js",
+    "src/enhance-promise.ts",
+    "src/enhance-promise.d.ts"
+  ],
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,10 @@
+*.map
+*.log
+.vscode/settings.json
+.vscode/launch.json
+
+debug/
+dist/
+node_modules/
+.nyc_output/
+tmp/
