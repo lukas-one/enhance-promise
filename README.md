@@ -1,35 +1,42 @@
-# Simple/lazy but pretty console logging for TS/JS projects #
+# Simele enhancements for Promises #
 
 
 Main features:
 
+PromiseChain (sequential)
 ```js
-Log.i("Here's some info for ya");
+const chain: Array<() => Promise<any>> = [
+	() => this.countDown("3"),
+	() => this.countDown("2"),
+	() => this.countDown("1"),
+	() => this.countDown("GO!")
+];
 
-Log.d("Something debug this way comes");
-
-Log.w("WARNING! Something undesirable happened");
-
-Log.c("#FFC0CB", "Looking pretty in pink");
-
-Log.e("ERROR! Something really bad has happened");
-
-Log.throw("ERROR! I give up");
+PromiseChain(chain).then(() => {
+	console.log(`Chain complete`);
+});
 ```
-	
-Set default colours with:
 
+PromiseWrap
 ```js
-Log.color.info = "blue";
-Log.color.debug = "green";
-Log.color.warn = "orange";
-Log.color.error = "purple";
+PromiseWrap(() => {
+	console.log(`Do this without calling resolve`);
+}).then(() => {
+	console.log(`Done`);
+})
+```
+
+PromiseDelay
+```js
+PromiseDelay(1000).then(() => {
+	console.log(`One second has passed`);
+})
 ```
 
 
 ## Installation ##
 
-	$> npm i enhance-log
+	$> npm i enhance-promise
 
 
 ## Contributors ##
