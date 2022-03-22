@@ -1,4 +1,4 @@
-# Simele enhancements for Promises #
+# Simple enhancements for Promises #
 
 
 Main features:
@@ -31,6 +31,21 @@ PromiseDelay
 PromiseDelay(1000).then(() => {
 	console.log(`One second has passed`);
 })
+```
+
+Putting it all together
+```js
+PromiseChain([
+    () => PromiseWrap(() => console.log(Date.now() + " One")),
+    () => PromiseDelay(1000),
+    () => PromiseWrap(() => console.log(Date.now() + " Two")),
+    () => PromiseDelay(1000),
+    () => PromiseWrap(() => console.log(Date.now() + " Three")),
+    () => PromiseDelay(1000),
+    () => PromiseWrap(() => console.log(Date.now() + " Go!"))
+]).then(() => {
+    console.log("We're done here");
+});
 ```
 
 
