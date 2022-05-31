@@ -1,5 +1,12 @@
 # Simple enhancements for Promises #
 
+```js
+// JS Projects
+const { PromiseChain, PromiseWrap, PromiseDelay } = require('enhance-promise');
+
+// TS Projects
+import { PromiseChain, PromiseDelay, PromiseWrap } from "enhance-promise";
+```
 
 Main features:
 
