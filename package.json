@@ -1,6 +1,6 @@
 {
   "name": "enhance-promise",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple enhancements for Promises in TS/JS projects",
   "main": "src/enhance-promise.js",
   "scripts": {
